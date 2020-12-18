@@ -2,9 +2,11 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"Card": "00_card.ipynb"}
+index = {"Card": "00_card.ipynb",
+         "Deck": "01_deck.ipynb"}
 
-modules = ["core.py"]
+modules = ["core.py",
+           "deck.py"]
 
 doc_url = "https://atcolab.github.io/deck_of_cards/"
 

@@ -1,32 +1,35 @@
 # Deck of Cards
-> Summary description here.
+> A minimal example of using nbdev to create a python library
 
 
-This file will become your README and also the index of your documentation.
+This repo uses code from [Allen Downey's](http://allendowney.com) [ThinkPython2](https://github.com/AllenDowney/ThinkPython2).  _This file was automatically generated from a Jupyter Notebook using [nbdev](https://nbdev.fast.ai/). to change it you must edit [index.ipynb](https://github.com/fastai/deck_of_cards/blob/master/index.ipynb)._
 
 ## Install
 
-`pip install your_project_name`
+After cloning this repository:
 
-## Using Card
+`pip install -e .`
+> There is already a project called [deck_of_cards on pypi](https://pypi.org/project/deck-of-cards/).  This project has no relation to that.  This project is an example of how to create python packages with [nbdev](https://github.com/fastai/nbdev).
 
-Here's how we create a card and test for valid cards!
+## How to Use
 
-```python
-Card(suit=2, rank=11)
-```
-
-
-
-
-    Jack of Hearts
-
-
+Playing cards in python!
 
 ```python
-c = Card(suit=1, rank=3)
-assert str(c) == '3 of Diamonds'
-
-c2 = Card(suit=2, rank=11)
-assert str(c2) == 'Jack of Hearts'
+from deck_of_cards.deck import Deck
+d = Deck()
+print(f'Number of playing cards in the deck: {len(d.cards)}')
 ```
+
+    Number of playing cards in the deck: 52
+
+
+```python
+card = d.pop_card()
+print(card)
+```
+
+    King of Spades
+
+
+See [the docs](https://fastai.github.io/deck_of_cards/) for more info.
