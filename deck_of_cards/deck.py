@@ -4,6 +4,7 @@ __all__ = ['Deck']
 
 # Cell
 from .card import Card
+from nbdev import *
 
 # Cell
 class Deck:
