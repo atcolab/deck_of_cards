@@ -1,5 +1,5 @@
-# Project name here
-> Summary description here.
+# deck_of_cards
+> A minimal example of nbdev using code from Allen Downey's Think Python 2nd Ed
 
 
 This file will become your README and also the index of your documentation.
@@ -12,13 +12,25 @@ This file will become your README and also the index of your documentation.
 
 Fill me in please! Don't forget code examples:
 
+```python
+Card(suit=2, rank=11)
 ```
-1+1
+
+
+
+
+    Jack of Hearts
+
+
+
+```python
+deck = Deck()
+deck.pop_card()
 ```
 
 
 
 
-    2
+    King of Spades
 
 
